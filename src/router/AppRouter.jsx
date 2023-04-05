@@ -3,11 +3,11 @@ import { Redirect, Route, Switch, useLocation } from 'react-router-dom';
 import { AnimatePresence } from 'framer-motion';
 import PrivateRoute from './PrivateRoute';
 import PublicRoute from './PublicRoute';
-import PageLoader from '../components/PageLoader';
+import PageLoader from '@/components/PageLoader';
 import { routesConfig } from './RoutesConfig';
 
-const Logout = lazy(() => import(/*webpackChunkName:'LogoutPage'*/ '../pages/Logout'));
-const NotFound = lazy(() => import(/*webpackChunkName:'NotFoundPage'*/ '../pages/NotFound'));
+const Logout = lazy(() => import(/*webpackChunkName:'LogoutPage'*/ '@/pages/Logout'));
+const NotFound = lazy(() => import(/*webpackChunkName:'NotFoundPage'*/ '@/pages/NotFound'));
 
 const SubMenuRouter = ({ subMenuRouter }) => {
   subMenuRouter.map((subMenu) => {
@@ -19,7 +19,7 @@ const SubMenuRouter = ({ subMenuRouter }) => {
         path={subMenu.path}
         exact={subMenu.exact || true}
         component={lazy(() =>
-          import(/* webpackChunkName: "[request]" */ `../pages/${subMenu.component}`)
+          import(/* webpackChunkName: "[request]" */ `@/pages/${subMenu.component}`)
         )}
       />
     );
@@ -39,7 +39,7 @@ export default function AppRouter() {
                 path={routeItem.path}
                 exact={routeItem.exact || true}
                 component={lazy(() =>
-                  import(/* webpackChunkName: "[request]" */ `../pages/${routeItem.component}`)
+                  import(/* webpackChunkName: "[request]" */ `@/pages/${routeItem.component}`)
                 )}
               />
             );
