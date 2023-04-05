@@ -1,7 +1,7 @@
 import React from 'react';
 
-import AdminCrudModule from '../modules/AdminCrudModule';
-import AdminForm from '../forms/AdminForm';
+import AdminCrudModule from '@/modules/AdminCrudModule';
+import AdminForm from '@/forms/AdminForm';
 
 export default function Admin() {
   const entity = 'admin';
