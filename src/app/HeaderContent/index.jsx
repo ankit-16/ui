@@ -1,6 +1,4 @@
 import React from 'react';
-import { useDispatch } from 'react-redux';
-
 import { Avatar, Menu, Dropdown } from 'antd';
 
 import {
