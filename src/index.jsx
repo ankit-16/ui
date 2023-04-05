@@ -1,11 +1,24 @@
-import ReactDOM from 'react-dom';
 import React from 'react';
+import ReactDOM from 'react-dom';
+
 import App from './app';
-import { AppContextProvider } from './context/appContext';
+import './style/app.less';
+// import * as serviceWorker from './serviceWorker';
+
+import { Router as RouterHistory } from 'react-router-dom';
+import { Provider } from 'react-redux';
+import history from '@/utils/history';
+import store from '@/redux/store';
+
+import { AppContextProvider } from '@/context/appContext';
 
 ReactDOM.render(
-    <AppContextProvider>
+  <RouterHistory history={history}>
+    <Provider store={store}>
+      <AppContextProvider>
         <App />
-    </AppContextProvider>,
-    document.getElementById('root')   
-)
+      </AppContextProvider>
+    </Provider>
+  </RouterHistory>,
+  document.getElementById('root')
+);
