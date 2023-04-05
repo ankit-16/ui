@@ -4,16 +4,16 @@ import { useDispatch, useSelector } from 'react-redux';
 import { Form, Input, Button, Space, Layout, Row, Col, Divider } from 'antd';
 import { Typography } from 'antd';
 
-import { login } from '../redux/auth/actions';
-import { selectAuth } from '../redux/auth/selectors';
-import LoginForm from '../forms/LoginForm';
-import AuthLayout from '../layout/AuthLayout';
+import { login } from '@/redux/auth/actions';
+import { selectAuth } from '@/redux/auth/selectors';
+import LoginForm from '@/forms/LoginForm';
+import AuthLayout from '@/layout/AuthLayout';
 
-import logo from '../style/images/logo.png';
-import logo1 from '../style/images/logo1.png';
-import logo2 from '../style/images/logo2.png';
-import logo3 from '../style/images/logo3.png';
-import logo4 from '../style/images/logo4.png';
+import logo from '@/style/images/logo-no-background.png';
+import logo1 from '@/style/images/logo1.png';
+import logo2 from '@/style/images/logo2.png';
+import logo3 from '@/style/images/logo3.png';
+import logo4 from '@/style/images/logo4.png';
 
 const { Content } = Layout;
 const { Title, Text } = Typography;
@@ -22,7 +22,7 @@ const SideContent = () => {
   return (
     <Content
       style={{
-        padding: '150px 30px 30px',
+        padding: '10px 10px 30px',
         width: '100%',
         maxWidth: '400px',
         margin: '0 auto',
@@ -30,7 +30,12 @@ const SideContent = () => {
       className="sideContent"
     >
       <div style={{ width: '100%' }}>
-        <img src={logo} alt="Logo" style={{ margin: '0 auto 40px', display: 'block' }} />
+        <img src={logo} alt="Logo" style={{ 
+            margin: '70px 40px 40px', 
+            display: 'block', 
+            width: '70%', 
+            height: 'auto' 
+        }} />
         <div className="space40"></div>
         <Title level={3}>Manage your company with :</Title>
         <div className="space20"></div>
@@ -39,7 +44,7 @@ const SideContent = () => {
             <Space direction="vertical">
               <Text strong>All-in-one tool</Text>
 
-              <Text>Build, run, and scale your apps - end to end</Text>
+              <Text>Manage, run, and scale your Company - end to end</Text>
             </Space>
           </li>
 
@@ -65,7 +70,6 @@ const SideContent = () => {
               display: 'block',
               float: 'left',
               width: '48px',
-              filter: 'grayscale(1)',
               mixBlendMode: 'multiply',
               opacity: '0.8',
             }}
@@ -78,7 +82,6 @@ const SideContent = () => {
               display: 'block',
               float: 'left',
               width: '48px',
-              filter: 'grayscale(1)',
               mixBlendMode: 'multiply',
               opacity: '0.8',
             }}
@@ -91,7 +94,6 @@ const SideContent = () => {
               display: 'block',
               float: 'left',
               width: '48px',
-              filter: 'grayscale(1)',
               mixBlendMode: 'multiply',
               opacity: '0.8',
             }}
@@ -104,7 +106,6 @@ const SideContent = () => {
               display: 'block',
               float: 'left',
               width: '48px',
-              filter: 'grayscale(1)',
               mixBlendMode: 'multiply',
               opacity: '0.8',
             }}
@@ -127,7 +128,7 @@ const LoginPage = () => {
       <AuthLayout sideContent={<SideContent />}>
         <Content
           style={{
-            padding: '200px 30px 30px',
+            padding: '160px 30px 30px',
             maxWidth: '440px',
             margin: '0 auto',
           }}
