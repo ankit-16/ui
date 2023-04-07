@@ -1,7 +1,7 @@
 import * as actionTypes from './types';
-import * as authService from '../auth';
+import * as authService from '@/auth';
 
-import history from '../../utils/history';
+import history from '@/utils/history';
 
 export const login =
   ({ loginData }) =>
