@@ -15,7 +15,7 @@ import { useMoney } from '@/settings';
 import RecordPayment from './RecordPayment';
 
 export default function Payment({ config }) {
-  const { entity, ENTITY_NAME } = config;
+  const { ENTITY_NAME } = config;
 
   const { crmContextAction } = useCrmContext();
 
@@ -114,7 +114,7 @@ export default function Payment({ config }) {
               {money.amountFormatter({ amount: currentCrm.subTotal })}
             </Descriptions.Item>
             <Descriptions.Item label="Total">
-              {money.amountFormatter({ amount: currentCRm.total })}
+              {money.amountFormatter({ amount: currentCrm.total })}
             </Descriptions.Item>
             <Descriptions.Item label="Discount">
               {money.amountFormatter({ amount: currentCrm.discount })}

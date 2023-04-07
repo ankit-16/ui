@@ -12,7 +12,7 @@ import Loading from '@/components/Loading';
 import PaymentInvoiceForm from '@/forms/PaymentInvoiceForm';
 
 export default function RecordPayment({ config }) {
-  let { entity, CREATE_ENTITY } = config;
+  let { entity } = config;
   const { crmContextAction } = useCrmContext();
   const { recordPanel } = crmContextAction;
   const dispatch = useDispatch();

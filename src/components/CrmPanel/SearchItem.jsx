@@ -4,7 +4,6 @@ import { AutoComplete, Input } from 'antd';
 import { SearchOutlined } from '@ant-design/icons';
 import { useSelector, useDispatch } from 'react-redux';
 import { crm } from '@/redux/crm/actions';
-import { request } from '@/request';
 import { useCrmContext } from '@/context/crm';
 import { selectSearchedItems } from '@/redux/crm/selectors';
 

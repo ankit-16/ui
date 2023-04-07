@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import { Form, Divider, Space } from 'antd';
+import { Form, Divider } from 'antd';
 import dayjs from 'dayjs';
-import { Button, PageHeader, Row, Col, Tag } from 'antd';
+import { Button, PageHeader } from 'antd';
 
 import { useSelector, useDispatch } from 'react-redux';
 import { crm } from '@/redux/crm/actions';
@@ -34,7 +34,6 @@ export default function UpdateItem({ config, UpdateForm }) {
   const { current, isLoading, isSuccess } = useSelector(selectUpdatedItem);
   const [form] = Form.useForm();
   const [subTotal, setSubTotal] = useState(0);
-  const [autoCompleteValue, setAutoCompleteValue] = useState('');
 
   const handelValuesChange = (changedValues, values) => {
     const items = values['items'];

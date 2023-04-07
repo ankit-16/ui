@@ -4,7 +4,6 @@ import { Button, PageHeader } from 'antd';
 import { EllipsisOutlined } from '@ant-design/icons';
 import { useSelector, useDispatch } from 'react-redux';
 import { crm } from '@/redux/crm/actions';
-import { settings } from '@/redux/settings/actions';
 import { selectListItems } from '@/redux/crm/selectors';
 import { useCrmContext } from '@/context/crm';
 import uniqueId from '@/utils/uinqueId';
