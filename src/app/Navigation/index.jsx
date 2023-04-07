@@ -7,7 +7,6 @@ import logoIcon from '@/style/images/logo-icon.png';
 import logoText from '@/style/images/logo-text.png';
 
 import {
-  DesktopOutlined,
   SettingOutlined,
   CustomerServiceOutlined,
   FileTextOutlined,
@@ -16,7 +15,6 @@ import {
   TeamOutlined,
   UserOutlined,
   CreditCardOutlined,
-  BankOutlined,
 } from '@ant-design/icons';
 
 const { Sider } = Layout;
