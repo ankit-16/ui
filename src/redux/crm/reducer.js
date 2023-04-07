@@ -55,7 +55,7 @@ const INITIAL_STATE = {
   },
 };
 
-const erpReducer = (state = INITIAL_STATE, action) => {
+const crmReducer = (state = INITIAL_STATE, action) => {
   const { payload, keyState } = action;
   switch (action.type) {
     case actionTypes.RESET_STATE:
@@ -113,4 +113,4 @@ const erpReducer = (state = INITIAL_STATE, action) => {
   }
 };
 
-export default erpReducer;
+export default crmReducer;

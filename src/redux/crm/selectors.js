@@ -1,21 +1,21 @@
 import { createSelector } from 'reselect';
 
-const selectErp = (state) => state.erp;
+const selectCrm = (state) => state.crm;
 
-export const selectCurrentItem = createSelector([selectErp], (erp) => erp.current);
+export const selectCurrentItem = createSelector([selectCrm], (crm) => crm.current);
 
-export const selectListItems = createSelector([selectErp], (erp) => erp.list);
+export const selectListItems = createSelector([selectCrm], (crm) => crm.list);
 export const selectItemById = (itemId) =>
   createSelector(selectListItems, (list) => list.result.items.find((item) => item._id === itemId));
 
-export const selectCreatedItem = createSelector([selectErp], (erp) => erp.create);
+export const selectCreatedItem = createSelector([selectCrm], (crm) => crm.create);
 
-export const selectUpdatedItem = createSelector([selectErp], (erp) => erp.update);
+export const selectUpdatedItem = createSelector([selectCrm], (crm) => crm.update);
 
-export const selectRecordPaymentItem = createSelector([selectErp], (erp) => erp.recordPayment);
+export const selectRecordPaymentItem = createSelector([selectCrm], (crm) => crm.recordPayment);
 
-export const selectReadItem = createSelector([selectErp], (erp) => erp.read);
+export const selectReadItem = createSelector([selectCrm], (crm) => crm.read);
 
-export const selectDeletedItem = createSelector([selectErp], (erp) => erp.delete);
+export const selectDeletedItem = createSelector([selectCrm], (crm) => crm.delete);
 
-export const selectSearchedItems = createSelector([selectErp], (erp) => erp.search);
+export const selectSearchedItems = createSelector([selectCrm], (crm) => crm.search);

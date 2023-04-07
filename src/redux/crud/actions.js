@@ -1,5 +1,5 @@
 import * as actionTypes from './types';
-import { request } from '../../request';
+import { request } from '@/request';
 
 export const crud = {
   resetState:

@@ -2,7 +2,7 @@ import { combineReducers } from 'redux';
 
 import { reducer as authReducer } from './auth';
 import { reducer as crudReducer } from './crud';
-import { reducer as erpReducer } from './crm';
+import { reducer as crmReducer } from './crm';
 import { reducer as settingsReducer } from './settings';
 import { reducer as notifyReducer } from './notify';
 
@@ -14,7 +14,7 @@ const appReducer = combineReducers({
   auth: authReducer,
   notify: notifyReducer,
   crud: crudReducer,
-  erp: erpReducer,
+  crm: crmReducer,
   settings: settingsReducer,
 });
 

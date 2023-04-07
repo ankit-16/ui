@@ -1,7 +1,7 @@
 import * as actionTypes from './types';
-import { request } from '../../request';
+import { request } from '@/request';
 
-export const erp = {
+export const crm = {
   resetState: () => async (dispatch) => {
     dispatch({
       type: actionTypes.RESET_STATE,
