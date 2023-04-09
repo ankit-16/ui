@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { Layout, Menu } from 'antd';
 
 import { useAppContext } from '@/context/appContext';
-import logoIcon from '@/style/images/logo-icon.png';
+import logoIcon from '@/style/images/logo.png';
 import logoText from '@/style/images/logo-text.png';
 
 import {
@@ -48,7 +48,7 @@ export default function Navigation() {
           <img
             src={logoIcon}
             alt="Logo"
-            // style={{ margin: "0 auto 40px", display: "block" }}
+            style={{ marginLeft: "0px"}}
           />
 
           {!showLogoApp && (
