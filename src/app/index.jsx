@@ -1,15 +1,15 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 
 import Router from '@/router';
 
-import { Layout, notification } from 'antd';
+import { Layout } from 'antd';
 
 import Navigation from '@/app/Navigation';
 
 import { useSelector } from 'react-redux';
 import { selectAuth } from '@/redux/auth/selectors';
 import HeaderContent from '@/app/HeaderContent';
-import { useNetworkState } from 'react-use';
+
 
 function App() {
   const { isLoggedIn } = useSelector(selectAuth);

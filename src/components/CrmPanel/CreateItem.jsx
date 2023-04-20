@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Form, Divider } from 'antd';
 
-import { Button, PageHeader, Row, Statistic, Tag } from 'antd';
+import { Button, PageHeader,  Tag } from 'antd';
 
 import { useSelector, useDispatch } from 'react-redux';
 import { crm } from '@/redux/crm/actions';
