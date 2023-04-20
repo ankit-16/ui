@@ -1,9 +1,9 @@
-import React, { useRef, useState } from 'react';
-import { Form, Input, InputNumber, Space, Divider, Row, Col } from 'antd';
+import React from 'react';
+import { Divider, Row, Col } from 'antd';
 
-import { Layout, Breadcrumb, Statistic, Progress, Tag } from 'antd';
+import { Statistic, Progress, Tag } from 'antd';
 
-import { ArrowUpOutlined, ArrowDownOutlined } from '@ant-design/icons';
+import { ArrowUpOutlined } from '@ant-design/icons';
 
 import { DashboardLayout } from '@/layout';
 import RecentTable from '@/components/RecentTable';
