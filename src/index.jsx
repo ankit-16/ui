@@ -3,7 +3,6 @@ import ReactDOM from 'react-dom';
 
 import App from './app';
 import './style/app.less';
-// import * as serviceWorker from './serviceWorker';
 
 import { Router as RouterHistory } from 'react-router-dom';
 import { Provider } from 'react-redux';
